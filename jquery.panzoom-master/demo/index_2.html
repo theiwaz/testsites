@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Panzoom for jQuery</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <style type="text/css">
+      body { background: #F5FCFF; color: #333666; }
+      section { text-align: center; margin: 50px 0; }
+      .panzoom-parent { border: 2px solid #333; }
+      .panzoom-parent .panzoom { border: 2px dashed #666; }
+      div.parent { width: 500px; height: 500px; overflow: hidden; border:1px solid;}
+      .buttons { margin: 40px 0 0; }
+      div.panzoom{}
+    </style>
+    <script src="../test/jquery.js"></script>
+    <script src="../dist/jquery.panzoom.js"></script>
+  </head>
+  <body>
+    <section id="focal">
+      <h1>Use the mousewheel to zoom on a focal point</h1>
+      <div class="parent">
+        <div class="panzoom">
+          <img src="../../183_4_Projecten Nationaal_aug2013_georef (1).svg">
+        </div>
+      </div> 
+      <script>
+        (function() {
+          var $section = $('#focal');
+          var $panzoom = $section.find('.panzoom').panzoom();
+          $panzoom.parent().on('mousewheel.focal', function( e ) {
+            e.preventDefault();
+            $panzoom.panzoom('zoom', e.originalEvent.wheelDelta < 0, {
+              increment: 0.2,
+              focal: e
+            });
+          });
+        })();
+      </script>
+    </section>
+  </body>
+</html>

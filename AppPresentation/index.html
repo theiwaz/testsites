@@ -1,0 +1,249 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        
+        <title>Apps, apps my kingdom for an APP</title>
+        
+        <meta name="description" content="A framework for easily creating beautiful presentations using HTML">
+        <meta name="author" content="Hakim El Hattab">
+        
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        
+        <link rel="stylesheet" href="css/reveal.css">
+        <link rel="stylesheet" href="css/theme/default.css" id="theme">
+        
+        <!-- For syntax highlighting -->
+        <link rel="stylesheet" href="lib/css/zenburn.css">
+        
+        <!-- If the query includes 'print-pdf', use the PDF print sheet -->
+        <script>
+            document.write( '<link rel="stylesheet" href="css/print/' + ( window.location.search.match( /print-pdf/gi ) ? 'pdf' : 'paper' ) + '.css" type="text/css" media="print">' );
+        </script>
+        
+        <!--[if lt IE 9]>
+<script src="lib/js/html5shiv.js"></script>
+<![endif]-->
+    </head>
+    <style>
+        .left { text-align: left; }
+        p.reveal {margin-bottom: .75em;}
+        h1 {color: orange;}
+    </style>
+    <body>
+        
+        <div class="reveal">
+            
+            <!-- Any section element inside of this container is displayed as a slide -->
+            <div class="slides">
+                <section data-markdown>
+                    <script type="text/template">
+					    #Apps
+					    ### The truth uncovered!
+                    </script>
+                </section>
+                
+                <section>
+                    <h1 class="wmd-title" id="apps,-apps-they-all-want-apps">Apps, apps they all want apps!</h1>
+                    
+                    <ul>
+                        <li>
+                            <p class="left"><strong>Situatie: </strong>
+                                Aanhoudende vraag naar apps </p>
+                        </li>
+                        <li>
+                            <p class="left"><strong>Probleem:</strong>
+                                Zonder duidelijke context, wens, doel en visie leidt dit tot een fragementatie van resources en oplopende kosten tijdens ontwikkelen en later in beheer. </p>
+                        </li>
+                        <li>
+                            <p class="left"><strong>Oplossing:</strong>
+                                Informeren over de mogelijkheden en weloverwogen strategie bedenken voor mobile devices (intern en extern)</p>
+                        </li>
+                    </ul>
+                    <aside class="notes">
+                        Oh hey, these are some notes. They'll be hidden in your presentation, but you can see them if you open the speaker notes window (hit 's' on your keyboard).
+                    </aside>
+                </section>
+                <section data-background="animoca-android1.png">
+                    <h1 class="wmd-title" id="huidige-speelveld">Huidige speelveld</h1>
+                    <br/>
+                    <ul class="reveal">
+                        <li>Windows Mobile, Android, iOS, Blackberry OS &#8230; etc</li>
+                        <li>Form factors: SmartPhone, Tablet, Phablet &#8230; etc</li>
+                    </ul>
+                    <br/><br/>
+                    
+                    <p class="left"><strong>Uitdaging:</strong></p>
+                    <p class="left">De juiste strategie vormen zodat we tegen zo laag mogelijke kosten een zo breed mogelijk publiek kunnen bereiken en hoe zorgen we ervoor dat de juiste content op de juiste plekken staat.</p>
+                </section>
+                
+                <!-- Example of nested vertical slides -->
+                <section>
+                    <section>
+                        <h1 class="wmd-title" id="mobiele-toepassingen-ontwikkelen,-verschillende-oplossingen">Mobiele toepassingen</h1>
+                        <h3>verschillende oplossingen</h3>
+                        <br/>
+                        <ul class="">
+                            <li>Reponsive/adaptive websites</li>
+                            <li>Hybride</li>
+                            <li>Native apps</li>
+                        </ul>
+                        
+                        <aside class="notes">
+                            <p>Voor het leveren van informatie/functionaliteit op verschillende devices zijn er verschillende oplossingen die ieder voor verschillende situaties hun toepassing hebben.</p>
+                        </aside>
+                    </section>
+                    <section>
+                        <h2 class="wmd-title" id="responsive/adaptive-websites">Responsive/Adaptive websites</h2>
+                        
+                        <p>Websites die zich aanpassen naar de beschikbare ruimte en mogelijkheden op het apparaat dat gebruikt wordt om de website te gebruiken. Daarbij wordt onderscheid gemaakt tussen twee technologieën:</p>
+                        
+                        <ul>
+                            <li>Responsive Design</li>
+                            <li>Adaptive Design</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>Responsive Design</h2>
+                        <p>Elk apparaat krijgt dezelfde pagina / code gepresenteerd. De lay-out past zich automatisch vloeiend aan op de beschikbare breedte van het apparaat en zorgt ervoor dat gebruikers, ongeacht de breedte of oriëntatie van hun apparaat, altijd. Deze technologie speelt zich af op de 'front-end' (client-side).</p>
+                        
+                        <blockquote>Technologiën: HTML, CSS, Javascript</blockquote>
+                        <br/>
+                        <p><em>Voorbeelden Responsive Design</em>:</p>
+                        
+                        <ul>
+                            <li><a href="http://www.bostonglobe.com/">Boston Globe</a></li>
+                            <li><a href="http://foodsense.is/">Food Sense</a></li>
+                            <li><a href="http://www.ilent.nl/">Inspectie Leefomgeving en Transport</a></li>
+                        </ul>
+                    </section>
+                    <section>
+                        
+                        <h2>Adaptive Design</h2>
+                        <p class="left">Een vooraf gedefinieerd aantal apparaten krijgt specifiek op dat apparaat toegespitste pagina's / code gepresenteerd. De lay-out is geoptimaliseerd voor het desbetreffende apparaat, waarbij o.a. afmetingen, extra beschikbare functionaliteiten en ook beperkingen een rol spelen. Deze technologie speelt zich af op de applicatie server (server-side).</p>
+                        
+                        <blockquote>Technologiën: Server side programming language (ASP.Net, PHP etc)</blockquote>
+                        <br/>
+                        <p><em>Voorbeelden Adaptive Design</em>:</p>
+                        <ul>
+                            <li><a href="http://www.epicurious.com/">Epicurious</a></li>
+                        </ul>
+                        <aside class="notes">
+                            <p>Deze twee technologieën bijten elkaar niet, maar becomplimenteren elkaar en zorgen - mits goed toegepast - gecombineerd voor de beste gebruikerservaring per apparaat.</p>
+                        </aside>					</section>
+                    <section>
+                        <h3 class="wmd-title" id="native-apps">Native apps</h3>
+                        
+                        <ul>
+                            <li>Specifieke app per platform</li>
+                            <li>Specifieke kennis per platform (progammeertalen, device kennis)</li>
+                            <li>Gebruik maken van kracht en mogelijkheden van devices (camera/GPS/gyroscoop)</li>
+                        </ul>
+                        
+                        <blockquote>Technologiën: HTML, CSS, Javascript, XCode, Java, C/C++/QT, Actionscript/Air, Server side programming language</blockquote>
+                        
+                        <aside class="notes">Achtergrond met android devices</aside>
+                    </section>
+                    <section>
+                        <h2 class="wmd-title" id="hybride">Hybride</h2>
+                        
+                        <p>Apps gebaseerd op HTML5/CSS verpakt op een manier waardoor ze in de verschillend app stores geplaatst kunnen worden. Deze verpakte websites kunnen zelfs nog gebruik maken van device capaciteiten door het gebruik van frameworks zoals:</p>
+                        
+                        <ul>
+                            <li>Phonegap</li>
+                            <li>Appcelerator Titanium</li>
+                            <li>Cocoon JS</li>
+                            <li>Ejecta</li>
+                            <li>Trigger IO</li>
+                        </ul>
+                        
+                        <blockquote>Technologiën: HTML, CSS, Javascript, framework kennis</blockquote>
+                        
+                        
+                    </section>
+                </section>
+                
+                <section>
+                    <h1 class="wmd-title" id="de-oplossing">De oplossing</h1>
+                    
+                    <ul>
+                        <li>Er is geen 'one size fits all'. </li>
+                        <li>Ontdek de 'best fit' met de klant</li>
+                        <li>Duidelijke visie</li>
+                    </ul>
+                    
+                    <aside class="notes"><p>Per situatie moet er worden bekeken wat de functionele wensen zijn en welke oplossing daar het beste bij aansluit. Ons voorstel is om alles behalve de Native Apps zelf uit te voeren. Native apps zijn een verhaal apart en vergen specialistische kennis en voorraad van de verschillende platformen en apparaten. Het is ondoenlijk om deze kennis met het kleine team en de diversiteit aan werkzaamheden uit te voeren. Wel kan de governance voor native app development wel bij ons komen te liggen. </p>
+                        
+                        <p>Beheer van de native en hybride apps zal ook belegd moeten worden. De beheer/onderhoud organisatie is hiervoor het beste geoutilleerd omdat het meest lijkt op het beheer van werkplek applicaties. </p>
+                    </aside>				</section>
+                
+                
+                <section>
+                    <section>
+                        <h1 class="wmd-title" id="why-we-rock-(wat-kunnen-wij)">Why we rock! </h1>
+                        <h2>- wat kunnen wij - </h2>
+                        
+                        <p>Sluiten de technologien die wij als applications gebruiken aan bij de uitdagingen waar we voor staan</p>
+                        <h1>JA!</h1>
+                        <aside class="notes">
+                            
+                            <ul>
+                                <li>Tridion</li>
+                                <li>ASP.Net (c#)</li>
+                                <li>HTML</li>
+                                <li>Javascript</li>
+                                <li>CSS</li>
+                            </ul>    
+                        </aside>
+                    </section>
+                    <section>
+                        <h1>Onze kennis</h1>
+                            <ul>
+                                <li>Tridion</li>
+                                <li>ASP.Net (C#)</li>
+                                <li>HTML/CSS</li>
+                                <li>Javascript</li>
+                            </ul>
+                        
+                    </section>
+                </section>
+                
+            </div>
+            
+        </div>
+        
+        <script src="lib/js/head.min.js"></script>
+        <script src="js/reveal.min.js"></script>
+        
+        <script>
+            
+            // Full list of configuration options available here:
+            // https://github.com/hakimel/reveal.js#configuration
+            Reveal.initialize({
+                controls: true,
+                progress: true,
+                history: true,
+                center: true,
+                
+                theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+                transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+                
+                // Optional libraries used to extend on reveal.js
+                dependencies: [
+                    { src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+                    { src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+                    { src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+                    { src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+                ]
+            });
+            
+        </script>
+        
+    </body>
+</html>

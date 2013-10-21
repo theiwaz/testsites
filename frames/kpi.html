@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>Monitor -2- </TITLE>
+<script type="text/javascript">
+	var pos = 0;
+	var rotateSpeed=5000;
+	var urls = [
+					"\\\\ssodata\\sso$\\ICT\\Rapportages\\GOS-Ondersteuning\\voorraad_logistiek_vs_vodafone.htm",
+					"\\\\ssodata\\sso$\\ICT\\Rapportages\\GOS-Ondersteuning\\Regie_TV_view_SPARE.htm",
+					"\\\\ssodata\\sso$\\ICT\\Rapportages\\GOS-Ondersteuning\\Open_Calls_6_uur_indicatie_Xerox.htm"
+				];
+
+	function next()
+	{
+	  if(pos == urls.length) pos = 0; // reset the counter
+	  document.getElementById('topleft').src = urls[pos];
+	  pos++;
+	}
+
+	function init(){
+		next();
+		setInterval(next, rotateSpeed); // every 5 seconds
+	}
+	window.onload = init;
+</script>
+</HEAD>
+<FRAMESET ROWS="70%,30%">
+  <FRAMESET COLS="40%,20%,60%">
+    	<Frame src="\\ssodata\sso$\ICT\Rapportages\GOS-Ondersteuning\voorraad_logistiek_vs_vodafone.htm" id="topleft">
+	<Frame src="\\ssodata\sso$\ICT\Rapportages\GOS-Ondersteuning\Open_Calls_6_uur_indicatie_Xerox.htm">
+	<Frame src="\\ssodata\sso$\ICT\Rapportages\GOS-Ondersteuning\VIP_service.htm">
+	</FRAMESET>
+  <Frame src="\\ssodata\sso$\ICT\GebruikersOndersteuning\Team Mobiel - Logistiek\Regie\@- Regie-Algemeen\Verlof overzicht\Verlof jaar overzicht 1.0.html">
+</FRAMESET>
+</HTML>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document id="i1392228255">
+
+	<name>Document_0002</name>
+	<open>1</open>
+	<atom:author>
+		<atom:name>Created using KML Builder</atom:name>
+		<atom:uri>http://www.northgates.ca/kmlbuilder</atom:uri>
+	</atom:author>
+	<GroundOverlay id="i139222906">
+		<name>MIRTKaart</name>
+		<Icon id="i139222907">
+			<href>images/183_4_Projecten_Nationaal_aug2013_georef.png</href>
+		</Icon>
+		<LatLonBox>
+			<north>53.57619751943663</north>
+			<south>50.77375666024199</south>
+			<east>7.303548010720904</east>
+			<west>3.264140781344882</west>
+			<rotation>1.080904766098648</rotation>
+		</LatLonBox>
+	</GroundOverlay>
+	<Placemark id="i1392313108">
+		<name>Project 27</name>
+		<description><![CDATA[<div>
+	Test, van project 27 in Zuid-Holland.</div>    
+<div>
+	<a href="http://mirt2014.mirtprojectenboek.nl" target="ProjectPDF">Download de PDF</a></div>]]></description>
+		<Style>
+			<IconStyle>
+				<Icon>
+					<href>http://www.northgates.ca/earthplugin/images/pin48.png</href>
+				</Icon>
+			</IconStyle>
+		</Style>
+		
+		<Point>
+			<coordinates>4.240593009222087,52.09659982199993,0</coordinates>
+		</Point>
+	</Placemark>
+</Document>
+</kml>
